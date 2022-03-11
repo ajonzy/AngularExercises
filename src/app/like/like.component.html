@@ -1,0 +1,6 @@
+<fa-icon 
+    [icon]="faHeart" 
+    (click)="handleClick()"
+    [class]="isLiked ? 'heart-full' : 'heart-empty'"
+></fa-icon>
+<span>{{ likesCount }}</span>
