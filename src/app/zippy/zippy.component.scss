@@ -1,0 +1,17 @@
+.wrapper {
+    border: 1px solid #cfced0;
+    border-radius: 3px;
+
+    & > div {
+        padding: 20px;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+
+        &.active {
+            background-color: #f4f3f4;
+        }
+    }
+}

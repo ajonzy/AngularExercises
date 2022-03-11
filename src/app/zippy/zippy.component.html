@@ -1,0 +1,7 @@
+<div class="wrapper">
+    <div class="heading" [class.active]="showContent" (click)="showContent = !showContent">
+        <span>{{ title }}</span>
+        <span><fa-icon [icon]="showContent ? faChevronUp : faChevronDown"></fa-icon></span>
+    </div>
+    <div class="body" *ngIf="showContent"><ng-content></ng-content></div>
+</div>
