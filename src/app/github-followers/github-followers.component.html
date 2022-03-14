@@ -1,0 +1,7 @@
+<div *ngFor="let follower of followers" class="github-follower">
+    <img [src]="follower.avatar_url" alt="">
+    <div class="follower-info">
+        <h5>{{ follower.login }}</h5>
+        <a [href]="follower.html_url">{{ follower.html_url }}</a>
+    </div>
+</div>
